@@ -7,7 +7,7 @@ html {
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-top: 4rem;
+  padding-top: 65px;
   padding-bottom: 3rem;
   color: #5a5a5a;
 }
@@ -67,7 +67,8 @@ body {
 .featurette-heading {
   letter-spacing: 2px;
   color: #ffd472;
-  text-shadow: 1px 3px #d39e00;
+  text-shadow: 1px 2px #d39e00;
+  text-align: center;
 }
 
 
@@ -161,11 +162,94 @@ body {
 }
 
 .nav-link:hover {
-  background-color: #fdcd46;
+  background-color: #fdcd46 !important;
   color: #503a00 !important;
   border-radius: 12px;
 }
 
 .nav-link {
-  color: #ffcd46 !important;
+	color: #ffcd46 !important;
+	transition: background-color 0.8s ease;
+	border-radius: 12px;
+	margin-left: 5px;
+	text-align: center;	
+    font-size: 18px;
+}
+
+.nav-link-active {
+  background-color: #fdcd46;
+  color: #503a00 !important;
+  border-radius: 12px;
+}
+
+.profile-image {
+	background-image: url(images/ananda-manage.jpg);
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.toggle-button {
+	background-color: #fdcd46;
+    border-color: #fdcd46 !important;
+}
+
+.toggle-button:hover {
+	background-color: #fdcd46 !important;
+    border-color: #fdcd46 !important;
+}
+
+.toggle-button:focus {
+	background-color: #fdcd46 !important;
+    border-color: #fdcd46 !important;
+}
+
+.icon-bar {
+	background-color: #503a00 !important;
+}
+
+.navbar-brand {
+    color: #fdcd46 !important;
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+	.navbar-brand{
+	    display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.featurette-heading{
+	    display: none;
+	}
+}
+
+@media (min-width: 992px) {
+	.edu-box {
+		margin-top: 15%;
+	}
+}
+
+.to-top-icon {
+	height: 60px;
+    width: 60px;
+    float: right;
+    position: fixed;
+    z-index: 1200;
+    bottom: 46px;
+    right: 15px;
+    color: #f1ddaa;
+	transition: background-color 0.8s ease;
+}
+
+.footer {
+	text-align: center;
+}
+
+.to-top-icon:hover {
+	color: #fdcd46;
 }
